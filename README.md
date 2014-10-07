@@ -17,13 +17,13 @@ Michael Sumner, October 2014
 
 ## Extreme bare bones usage
 
-git clone https://github.com/mdsumner/utas_latex_thesis.git
-cd utas_latex_thesis
-latex thesis
-bibtex thesis
-makeindex thesis.idx
-latex thesis
-latex thesis
+    git clone https://github.com/mdsumner/utas_latex_thesis.git
+    cd utas_latex_thesis
+    latex thesis
+    bibtex thesis
+    makeindex thesis.idx
+    latex thesis
+    latex thesis
 
 
 # University of Tasmania Mathematics Style File and Thesis Template for LaTeX2e
