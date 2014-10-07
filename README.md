@@ -1,12 +1,12 @@
-# University of Tasmania Mathematics Style File and Thesis Template for LaTeX2e
+
 
 ## Historical note
-
-*This material was previously available here:* http://staff.acecrc.org.au/~mdsumner/TCallaghan/
 
 In ca. 2004 Tim Callaghan very kindly provided a LaTeX2e template for
 a UTas thesis. The content here is a fairly faithful copy of his
 original. 
+
+This material was previously available here: http://staff.acecrc.org.au/~mdsumner/TCallaghan/
 
 1. You can see the original summary file **utas_latex.html**, which is
 otherwise reproduced in this readme.
@@ -14,6 +14,19 @@ otherwise reproduced in this readme.
 3. I have included a new directory **extra** which has material provided by Tom Remenyi.  
 
 Michael Sumner, October 2014
+
+## Extreme bare bones usage
+
+git clone https://github.com/mdsumner/utas_latex_thesis.git
+cd utas_latex_thesis
+latex thesis
+bibtex thesis
+makeindex thesis.idx
+latex thesis
+latex thesis
+
+
+# University of Tasmania Mathematics Style File and Thesis Template for LaTeX2e
 
 ##What is this?
 
@@ -121,11 +134,11 @@ on the file 'thesis.tex'. In order for LaTeX to determine the page
 numbers correctly in the table of contents you have to execute the
 commands in the following order.
 
-1. Run LaTeX on thesis.tex
-2. Run BIBTex on thesis.tex
-3. Run MakeIndex on thesis.idx (note the different file extension)
-4. Run LaTeX again on thesis.tex
-5. Run LaTeX once more on thesis.tex
+1. Run LaTeX on **thesis.tex**
+2. Run BIBTex on **thesis.tex**
+3. Run MakeIndex on **thesis.idx** (note the different file extension)
+4. Run LaTeX again on **thesis.tex**
+5. Run LaTeX once more on **thesis.tex**
 
 This may look a little strange but this sequence of commands is
 necessary to make sure LaTeX gets all its page numbers and references
