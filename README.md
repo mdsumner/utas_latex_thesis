@@ -6,16 +6,20 @@
 
 In ca. 2004 Tim Callaghan very kindly provided a LaTeX2e template for
 a UTas thesis. The content here is a fairly faithful copy of his
-original. Read the original summary file "utas_latex.html", which is
-otherwise reproduced in this readme.
+original. 
 
-Michael Sumner
+1. You can see the original summary file **utas_latex.html**, which is
+otherwise reproduced in this readme.
+2. The original .zip bundle is available in **thesis.zip**
+3. I have included a new directory **extra** which has material provided by Tom Remenyi.  
+
+Michael Sumner, October 2014
 
 ##What is this?
 
 A style file is a way of getting LaTeX to do a lot of formatting and
 processing for tasks that are so common that they are deemed style
-file "worthy". The generation of a PhD thesis is once such task that
+file *worthy*. The generation of a PhD thesis is once such task that
 (in my opinion) falls into this category. Since the Research Higher
 Degrees Resource Book lays out fairly specific formatting guidelines
 for the thesis it becomes the task of the style file to automatically
@@ -40,7 +44,7 @@ be in place.
 
 This is not a tutorial on how to use LaTeX. There are many fine
 references on the net that address this issue. A good place to start
-is "The (Not So) Short Introduction to LaTeX2e" which is not only a
+is **The (Not So) Short Introduction to LaTeX2e** which is not only a
 good introduction but also serves as a handy reference manual . Thus
 in the following discussion I assume that you know what LaTeX is and
 how to use it on your operating system of choice. I also assume you
@@ -91,17 +95,17 @@ their self install directions for your particular OS.
 
 You must download the following files and save them all to the same directory on your computer 
 
-* The thesis style file mathphdthesis.sty
-* The thesis TeX file thesis.tex
-* The prelude TeX file prelude.tex
-* The new commands TeX file newcom.tex
-* The chapter TeX files chap1.tex, chap2.tex, chap3.tex and chap4.tex
-* The appendix switch TeX file app0.tex
-* The appendix TeX files app1.tex and app2.tex
-* The bibliography switch TeX file biby.tex
-* The sample bibliography database thesis.bib
-* The index switch TeX file index.tex
-* The UTas graphics logo Utas_vert_BW.ps
+* The thesis style file **mathphdthesis.sty**
+* The thesis TeX file **thesis.tex**
+* The prelude TeX file **prelude.tex**
+* The new commands TeX file **newcom.tex**
+* The chapter TeX files **chap1.tex**, **chap2.tex**, **chap3.tex** and **chap4.tex**
+* The appendix switch TeX file **app0.tex**
+* The appendix TeX files **app1.tex** and **app2.tex**
+* The bibliography switch TeX file **biby.tex**
+* The sample bibliography database **thesis.bib**
+* The index switch TeX file **index.tex**
+* The UTas graphics logo **Utas_vert_BW.ps**
 
 If you prefer, you can just download the zip archive thesis.zip which
 contains all the files listed above as well as the dvi and pdf
@@ -219,9 +223,13 @@ neatly. I have also used some of his code for populating dynamic
 content.
 
 Some other useful links that I have profited from along the way are...
+
 [General tips and tricks for LaTeX2e](http://theoval.sys.uea.ac.uk/~gcc/family/nicky/csed/advice.html)
+
 [Some sample chapter heading styles](http://zoonek.free.fr/LaTeX/LaTeX_samples_chapter/0.html) 
+
 [LaTeX packages by category](http://www.cs.brown.edu/system/software/latex/packages-by-category.html)
+
 [Packages aimed at thesis preparation](http://www-sigproc.eng.cam.ac.uk/~jrh1008/Resources/Latex/LaTeXPackages.html )
 
 I don't pretend to take credit for originality, however the general code design has been altered enough so as to justifiably call it my own...sort of ;) 
