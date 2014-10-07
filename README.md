@@ -4,7 +4,7 @@
 
 *This material was previously available here:* http://staff.acecrc.org.au/~mdsumner/TCallaghan/
 
-In ca. 2002 Tim Callaghan very kindly provided a LaTeX2e template for
+In ca. 2004 Tim Callaghan very kindly provided a LaTeX2e template for
 a UTas thesis. The content here is a fairly faithful copy of his
 original. Read the original summary file "utas_latex.html", which is
 otherwise reproduced in this readme.
@@ -148,45 +148,81 @@ that will customise it for you personally. The file that you will need
 to edit is 'prelude.tex'. If you have a look in this file you will see
 the following lines...
 
-> \title{PLACE THESIS TITLE HERE} % use all capital letters
-> \author{Your Name} % use mixed upper & lower case
-> \prevdegrees{B.A. B.Sc. Hons (Qld)} % Used to specify your previous degrees...use mixed upper & lower case
-> \advisor{Dr Ask Me} % example: Professor Lawrence K. Forbes
-> \dept{Mathematics} % your academic department
-> \submitdate{August, 2004} % month & year of your thesis submission
+    \title{PLACE THESIS TITLE HERE} % use all capital letters
+    \author{Your Name} % use mixed upper & lower case
+    \prevdegrees{B.A. B.Sc. Hons (Qld)} % Used to specify your previous degrees...use mixed upper & lower case
+    \advisor{Dr Ask Me} % example: Professor Lawrence K. Forbes
+    \dept{Mathematics} % your academic department
+    \submitdate{August, 2004} % month & year of your thesis submission
 
 Just simply change your relevant details in the fields. For example, if your name was John Smith B.A. Hons (QUT) and you were studying Ship Hydrodynamics you would put
-\title{SHIP HYDRODYNAMICS} % use all capital letters
-\author{John Smith} % use mixed upper & lower case
-\prevdegrees{B.A. Hons (QUT)} % Used to specify your previous degrees...use mixed upper & lower case
-\advisor{Dr Ask Me} % example: Professor Lawrence K. Forbes
-\dept{Mathematics} % your academic department
-\submitdate{August, 2004} % month & year of your thesis submission
 
-Now change the abstract and acknowledgements text by altering the text between the {} braces after the commands \newcommand{\abstextwithesis} and \newcommand{\acknowledgement}.
-Look at the very top of the file 'prelude.tex'. You will see a lot of commands with 'true' contained at the end of the command name. These are actually flags that specify which elements of the preface you want to generate. By default all the commands are set to true (include everything) but if you don't want to include something you merely change the 'true' to 'false' at the end of the command name. For example, to not include the title page you would change \titlepgtrue to \titlepgfalse. This is actually a handy thing to do since the title page contains the University logo on it and this causes a delay in display refresh times when viewing the dvi file since the image has to load each time. If your computer is slow-ish you probably want to set the above command to false to leave it out until you want to print a rough draft etc.
+    \title{SHIP HYDRODYNAMICS} % use all capital letters
+    \author{John Smith} % use mixed upper & lower case
+    \prevdegrees{B.A. Hons (QUT)} % Used to specify your previous degrees...use mixed upper & lower case
+    \advisor{Dr Ask Me} % example: Professor Lawrence K. Forbes
+    \dept{Mathematics} % your academic department
+    \submitdate{August, 2004} % month & year of your thesis submission
+
+Now change the abstract and acknowledgements text by altering the text
+between the {} braces after the commands \newcommand{\abstextwithesis}
+and \newcommand{\acknowledgement}.
+
+Look at the very top of the file 'prelude.tex'. You will see a lot of
+commands with 'true' contained at the end of the command name. These
+are actually flags that specify which elements of the preface you want
+to generate. By default all the commands are set to true (include
+everything) but if you don't want to include something you merely
+change the 'true' to 'false' at the end of the command name. For
+example, to not include the title page you would change \titlepgtrue
+to \titlepgfalse. This is actually a handy thing to do since the title
+page contains the University logo on it and this causes a delay in
+display refresh times when viewing the dvi file since the image has to
+load each time. If your computer is slow-ish you probably want to set
+the above command to false to leave it out until you want to print a
+rough draft etc.
 
 
  
 ###Populate the Thesis pages with original ideas!
 
-The easy part, or the hard part, depending on what we are talking about. From here all that remains to do is to fill out the chapters with your own work. You edit the chapters as you would any normal LaTeX document by placing your text and markup commands inside a chapter declaration. See the files 'chap1.tex', 'chap2.tex' etc. for examples. You can also add more packages to the preamble (after the documentclass declaration) to extend the functionality of LaTeX even more but you should always be careful of nullifying the formats that are set up in the style file. To make sure your commands are local you should always declare them inside an environment (inside {} braces).
-A sample bibliography database has also been included to give you an idea of how to set one up. See the BibTeX manual for more help on this topic. In addition, appendices have been added but these can be removed if needs been by simply commenting the appropriate include statements out in 'thesis.tex'.
+The easy part, or the hard part, depending on what we are talking
+about. From here all that remains to do is to fill out the chapters
+with your own work. You edit the chapters as you would any normal
+LaTeX document by placing your text and markup commands inside a
+chapter declaration. See the files 'chap1.tex', 'chap2.tex' etc. for
+examples. You can also add more packages to the preamble (after the
+documentclass declaration) to extend the functionality of LaTeX even
+more but you should always be careful of nullifying the formats that
+are set up in the style file. To make sure your commands are local you
+should always declare them inside an environment (inside {} braces).
+A sample bibliography database has also been included to give you an
+idea of how to set one up. See the BibTeX manual for more help on this
+topic. In addition, appendices have been added but these can be
+removed if needs been by simply commenting the appropriate include
+statements out in 'thesis.tex'.
 
-Perhaps this is not the best way to produce a thesis but it's a reasonable start and hopefully over time we can all make suggestions about what this style file should include so that the department has a quality style file that can be used by all students. For this reason suggestions and comments are most welcome and should be forwarded to me by way of the contact below. 
+Perhaps this is not the best way to produce a thesis but it's a
+reasonable start and hopefully over time we can all make suggestions
+about what this style file should include so that the department has a
+quality style file that can be used by all students. For this reason
+suggestions and comments are most welcome and should be forwarded to
+me by way of the contact below.
 
- 
-
- 
 ### Acknowledgements
 
-I obtained the information to make this file from a variety of sources on the internet. In particular I have drawn on the work of John Castelloe http://www.divms.uiowa.edu/help/uithesis/index.html. I have used his templating system as it is the obvious way to do things neatly. I have also used some of his code for populating dynamic content. 
+I obtained the information to make this file from a variety of sources
+on the internet. In particular I have drawn on the [work of John
+Castelloe](http://www.divms.uiowa.edu/help/uithesis/index.html). I have
+used his templating system as it is the obvious way to do things
+neatly. I have also used some of his code for populating dynamic
+content.
 
 Some other useful links that I have profited from along the way are...
-http://theoval.sys.uea.ac.uk/~gcc/family/nicky/csed/advice.html General tips and tricks for LaTeX2e
-http://zoonek.free.fr/LaTeX/LaTeX_samples_chapter/0.html Some sample chapter heading styles
-http://www.cs.brown.edu/system/software/latex/packages-by-category.html LaTeX packages by category
-http://www-sigproc.eng.cam.ac.uk/~jrh1008/Resources/Latex/LaTeXPackages.html Packages aimed at thesis preparation
+[General tips and tricks for LaTeX2e](http://theoval.sys.uea.ac.uk/~gcc/family/nicky/csed/advice.html)
+[Some sample chapter heading styles](http://zoonek.free.fr/LaTeX/LaTeX_samples_chapter/0.html) 
+[LaTeX packages by category](http://www.cs.brown.edu/system/software/latex/packages-by-category.html)
+[Packages aimed at thesis preparation](http://www-sigproc.eng.cam.ac.uk/~jrh1008/Resources/Latex/LaTeXPackages.html )
 
 I don't pretend to take credit for originality, however the general code design has been altered enough so as to justifiably call it my own...sort of ;) 
 
