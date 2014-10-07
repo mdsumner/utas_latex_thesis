@@ -1,7 +1,14 @@
-*.idx
 *.aux
-*.lot
+*.bbl
+*.blg
+*.dvi
+*.idx
+*.ilg
+*.ind
+*.lof
 *.log
-*.toc
+*.lot
 *.pdf
+*.toc
+
 *~
